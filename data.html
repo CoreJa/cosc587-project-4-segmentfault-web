@@ -138,7 +138,7 @@
                         <div class="col-xl-12">
                             <h2 id="21-covid-19-cases-and-death-dataset">2.1 Covid-19 Cases and Death Dataset</h2>
                             <h3 id="211-overview">2.1.1 Overview</h3>
-                            <p>We use CDC api to collect <a class="gray-dark-link" href="https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36">Covid-19 Cases and Death</a> dataset. We need a APP TOKEN to request their api.</p>
+                            <p>We use CDC api to collect <a class="primary-link" href="https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36">Covid-19 Cases and Death</a> dataset. We need a APP TOKEN to request their api.</p>
                             <p>Requested data are in the form of json array. I transform them into CSV data with some adjustments (to make data more easy to look at). Their api has a paging limitation so I can&#39;t just get my data in a simple request. I made a loop to request 5000 records per request, and save them into CSV files.</p>
                             <h3 id="212-data-sample">2.1.2 Data Sample and Definition</h3>
                             <figure>
@@ -213,7 +213,7 @@
                                     </tbody>
                                 </table>
                             </figure>
-                            <p>Please click <a class="gray-dark-link" href="sample_cdc.html">here</a> to view some data sample of this dataset.</p>
+                            <p>Please click <a class="primary-link" href="sample_cdc.html">here</a> to view some data sample of this dataset.</p>
                             <h3 id="213-data-issues">2.1.3 Data Issues</h3>
                             <ul>
                                 <li><p>Different data types such as float and string may appear in the same column.</p></li>
@@ -244,7 +244,7 @@
                         <div class="col-xl-12">
                             <h2 id="22-opensky-airline-dataset">2.2 Opensky Airline dataset</h2>
                             <h3 id="221-overview">2.2.1 Overview</h3>
-                            <p>We use python crawler to scrape data from <a class="gray-dark-link" href="https://opensky-network.org/">OpenSky</a> for this dataset. Find a website that contain the data we need, pass the url to the method, then the method will iterate all the href in the html text, add it into the waiting list only if it is the csv file that we need by using &#39;endswith()&#39;. Then use &#39;requests&#39; to scrape filee, and add a downloading percentage bar by using tqdm. Since all scv files are compressed as gz file, we also need to import gzip to decompress the file one by one by script.</p>
+                            <p>We use python crawler to scrape data from <a class="primary-link" href="https://opensky-network.org/">OpenSky</a> for this dataset. Find a website that contain the data we need, pass the url to the method, then the method will iterate all the href in the html text, add it into the waiting list only if it is the csv file that we need by using &#39;endswith()&#39;. Then use &#39;requests&#39; to scrape filee, and add a downloading percentage bar by using tqdm. Since all scv files are compressed as gz file, we also need to import gzip to decompress the file one by one by script.</p>
                             <p>In total, the whole dataset contains <strong>15 different columns</strong> and <strong>71645420 records</strong>.</p>
                             <p>Since it is too large to upload (13.3 GB), we choose to provide a download link for the whole data set.</p>
                             <h3 id="222-data-sample">2.2.2 Data Sample and Definition</h3>
@@ -300,7 +300,7 @@
                                     </tbody>
                                 </table>
                             </figure>
-                            <p>Please click <a class="gray-dark-link" href="sample_opensky.html">here</a> to view some data sample of this dataset.</p>
+                            <p>Please click <a class="primary-link" href="sample_opensky.html">here</a> to view some data sample of this dataset.</p>
                             <h3 id="223-data-issues">2.2.3 Data Issues</h3>
                             <ul>
                                 <li>There is no noise value in this dataset, only missing value</li>
@@ -427,7 +427,7 @@
                                     </tbody>
                                 </table>
                             </figure>
-                            <p>Please click <a class="gray-dark-link" href="sample_twitter.html">here</a> to view some data sample of this dataset.</p>
+                            <p>Please click <a class="primary-link" href="sample_twitter.html">here</a> to view some data sample of this dataset.</p>
                             <h3 id="233-data-issues">2.3.3 Data Issues</h3>
                             <ul>
                                 <li>
